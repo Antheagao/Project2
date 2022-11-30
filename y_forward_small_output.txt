@@ -1,0 +1,58 @@
+>> project2
+Welcome to the Feature Selection Algorithm.
+
+Type in the name of the file to test: CS170_Small_Data__90.txt
+Type in the number of the algorithm you want to run.
+	1) Forward Selection
+	2) Backward Elimination 
+1
+This dataset has 6 features (not including the class attribute), with 500 instances.
+
+Running nearest neighbor with all 6 features, using "leave-one-out" evaluation, I get an accuracy of 83%
+Running nearest neighbor with 0 features, using "leave-one-out" evaluation, I get an accuracy of 83%
+
+Beginning search.
+
+	using feature(s) {1} accuracy is 73.8%
+	using feature(s) {2} accuracy is 73.8%
+	using feature(s) {3} accuracy is 73.4%
+	using feature(s) {4} accuracy is 74.6%
+	using feature(s) {5} accuracy is 85.8%
+	using feature(s) {6} accuracy is 71.6%
+
+Feature set {5} was best, accuracy is 85.8%
+
+	using feature(s) {1,5} accuracy is 84.4%
+	using feature(s) {2,5} accuracy is 85.8%
+	using feature(s) {3,5} accuracy is 83%
+	using feature(s) {4,5} accuracy is 95.6%
+	using feature(s) {6,5} accuracy is 85.4%
+
+Feature set {5,4} was best, accuracy is 95.6%
+
+	using feature(s) {1,5,4} accuracy is 91.4%
+	using feature(s) {2,5,4} accuracy is 91.6%
+	using feature(s) {3,5,4} accuracy is 93.6%
+	using feature(s) {6,5,4} accuracy is 91.4%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+
+Feature set {5,4,3} was best, accuracy is 93.6%
+
+	using feature(s) {1,5,4,3} accuracy is 89.8%
+	using feature(s) {2,5,4,3} accuracy is 88.8%
+	using feature(s) {6,5,4,3} accuracy is 89.8%
+
+Feature set {5,4,3,1} was best, accuracy is 89.8%
+
+	using feature(s) {2,5,4,3,1} accuracy is 85%
+	using feature(s) {6,5,4,3,1} accuracy is 85.8%
+
+Feature set {5,4,3,1,6} was best, accuracy is 85.8%
+
+	using feature(s) {2,5,4,3,1,6} accuracy is 83%
+
+Feature set {5,4,3,1,6,2} was best, accuracy is 83%
+
+Finished search!! The best feature subset is {5,4} Which had an accuracy of 95.6%
+>> 
